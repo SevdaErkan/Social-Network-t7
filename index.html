@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sn.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
     <title>Social Network</title>
 </head>
 <body>
-    <!-- Header here -->
-    <header>
-        test
-        <h1>Hello World</h1>
-    </header>
+    
 
     <!-- Main Content -->
     <main class="grid">
 
-        <!-- right col here -->
-        <section class="right column">
+        <!-- left col here -->
+        <section class="left column">
             <div class="my-profile">
+                <div class="container-profile">
+                    <h4>My Profile</h4>
+                    <img src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/marat.jpg" alt="profile_img">
+                    <hr>
+                   
+                    <p><i class="fas fa-pencil-alt"></i> Software Engineer</p>
+                    <p><i class="fas fa-home"></i> Seattle</p>
+                    <p><i class="fas fa-birthday-cake"></i> 10 April</p>
+              
             </div>
+            </div>
+
             <div class="group-event-photos">
             </div>
             <div class="interests">
@@ -50,18 +60,77 @@
 
         <!-- mid col here -->
         <section class="middle column">
-            <div class="post"></div>
-            <div class="1st-post"></div>
+            <div class="post">
+                <div class="container-post">
+                    <textarea row="3">smmn</textarea>
+                   
+                    <button><i class="fas fa-pencil-alt"></i>Post</button>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="1st-post">
+                <div class="container-rs">
+                    <div class="name">
+                    <img  src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/rachel.jpeg" alt="rs">
+                    <p><strong>Rachel Sine</strong></p></div>
+                    <hr>
+                    <p>Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.</p>
+
+                    <div class="picture">
+                        <img src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p0.png" alt="shirt">
+                       
+                        <img src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p1.jpg" alt="brain">
+                    </div>
+                    <button><i class="fas fa-pencil-alt"></i>Like</button>
+                    <button><i class="fas fa-pencil-alt"></i>Comment</button>
+                </div>
+            </div>
             <div class="2nd-post"></div>
             <div class="3rd-post"></div>
         </section>
 
         <!-- left col here -->
         <section class="left column">
-            <div class="events"></div>
-            <div class="request"></div>
-            <div class="ads"></div>
-            <div class="bug"></div>
+            <div class="events">
+                <div class="container-events">
+                    <p>Upcoming Events:</p>
+                    <img src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/event.png" alt="seytech">
+                
+                    <p><strong>React course</strong></p>
+                    <p>Friday 15:00</p>
+                    <div class="info">
+                    <button class="info">Info</button>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="request">
+                <div class="container-request">
+                    <p>Friend Request:</p>
+                   <figure>
+                        <img src="http://learn.seytech.co/assets/images/avatars/default.jpg" alt="avatar">
+                        <figcaption>Shiba Inu</figcaption>
+                    
+                   </figure>
+        
+                    <div class="check">
+                        <button class="check-1" ><i class="fas fa-check"></i></button>
+                    
+
+                    
+                        <button  class="check-2"><i class="far fa-times"></i></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <div class="ads">ADS</div>
+            <br>
+            <div class="bug">
+                <i class="fas fa-bug fa-2x"></i>
+            </div>
         </section>
     </main>
 

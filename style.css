@@ -1,10 +1,185 @@
-.grid{
-    display:grid;
-    grid-template-columns: 30% 55% 15%;
-    
+body {
+  /* margin: auto; */
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f7f8;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 30% 50% 15%;
+  grid-gap: 2%;
+  width: 80%;
+  margin: 40px auto;
+  overflow: hidden;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
+/* (column-1 , row-1) my profile section */
+.container-profile {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 310px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+}
+.container-profile img {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+.container-profile h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.container-profile p {
+  text-align: left;
+}
+.container-profile p i {
+  color: #607d8b;
+  display: inline-block;
+  padding: 0 10px;
+}
+.container-profile hr {
+  width: 90%;
+  border: 1px solid #eee;
+}
+
+/* upcoming events section */
+
+.container-events {
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  max-height: 20%;
+  width: 100%;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  border-radius: 5px;
+}
+
+.container-events img {
+  width: 85%;
+  min-height: 180px;
+}
+
+.info button {
+  border: transparent;
+  width: 100%;
+  min-height: 40px;
+  background-color: #dfe5e8;
+}
+.info button:hover {
+  background-color: #c5c5c5;
+}
+/* friend */
+.container-request {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  height: 15%;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  border-radius: 5px;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.container-request figure img {
+  width: 100%;
+  min-height: 110px;
+}
+.check button {
+  border: transparent;
+  min-height: 30px;
+  color: white;
+  width: 100%;
+}
+.check {
+  margin: 10px 0;
+  display: flex;
+}
+
+.check-1 {
+  background-color: rgb(76, 175, 80, 0.5);
+}
+.check-2 {
+  background-color: rgb(255, 99, 71, 0.5);
+}
+.ads,
+.bug {
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+}
+.bug {
+  height: 120px;
+}
+/* orta kisim deneme */
+.container-post {
+  padding: 20px 30px 10px 20px;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  background-color: white;
+  display: block;
+  min-height: 60px;
+}
+.container-post button {
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #199de5;
+  border: transparent;
+  min-width: 15%;
+}
+
+.post textarea {
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  resize: none;
+  text-align: justify;
+}
+.post-button {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+/* rachel post */
+.container-rs {
+  padding: 20px 30px 10px 20px;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  background-color: white;
+  min-height: 400px;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.name p {
+  margin: 20px;
+}
+.name img {
+  max-height: 70px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.picture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.picture img {
+  max-width: 95%;
+  min-height: 180px;
 }
