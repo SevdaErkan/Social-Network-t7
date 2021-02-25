@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   /* margin: auto; */
   font-family: 'Open Sans', sans-serif;
@@ -183,3 +184,54 @@ figure {
   max-width: 95%;
   min-height: 180px;
 }
+=======
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:#199de5;
+    color: white;
+    display: flex;
+    height: 50px;
+}
+.head{
+    position: fixed;
+    width: 100%;
+}
+header a{
+    color: white;
+}
+header ul{ 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+span{
+    padding-left: 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav-right{
+    background-color: #2b617e;
+
+}
+.nav-right:hover{
+    background-color: lightgray;
+}
+.nav-left ul i:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color:#199de5;
+    color: white;
+}
+i{
+    padding: 20px;
+}
+>>>>>>> cd4fefa294ad39c2ccf53fc4a0f6a7418903c6e4
