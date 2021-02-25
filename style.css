@@ -332,3 +332,29 @@ h4 {
   top: 0px;
 }
 /* LEFT-COLUMN ENDS */
+
+footer{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer{
+background-color: #199de5;
+padding: 30px 20px;
+}
+.team{
+    background-color: #2b617e;
+    font-size: 15px;
+    padding: 20px;
+}
+.team a{
+    color: white;
+}
+h5{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+p{
+    margin: 0;
+}
