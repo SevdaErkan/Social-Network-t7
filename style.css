@@ -1,6 +1,11 @@
-<<<<<<< HEAD
+
+.columncenter{
+    font-size: 20px;
+}
+
 body {
-  /* margin: auto; */
+   margin: 0;
+    padding: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #f5f7f8;
   line-height: 1.5;
@@ -128,75 +133,18 @@ figure {
 .bug {
   height: 120px;
 }
-/* orta kisim deneme */
-.container-post {
-  padding: 20px 30px 10px 20px;
-  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
-  background-color: white;
-  display: block;
-  min-height: 60px;
-}
-.container-post button {
-  margin-top: 10px;
-  padding: 10px;
-  color: white;
-  background-color: #199de5;
-  border: transparent;
-  min-width: 15%;
-}
 
-.post textarea {
-  padding-left: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-  resize: none;
-  text-align: justify;
-}
-.post-button {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-/* rachel post */
-.container-rs {
-  padding: 20px 30px 10px 20px;
-  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
-  background-color: white;
-  min-height: 400px;
-}
-.name {
-  display: flex;
-  align-items: center;
-}
-.name p {
-  margin: 20px;
-}
-.name img {
-  max-height: 70px;
-  border-radius: 50%;
-  border: 1px solid;
-}
-.picture {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-}
-.picture img {
-  max-width: 95%;
-  min-height: 180px;
-}
-=======
-body{
-    margin: 0;
-    padding: 0;
-}
+
+
 header{
     background-color:#199de5;
     color: white;
     display: flex;
     height: 50px;
-}
-.head{
-    position: fixed;
+
+
+    position: sticky;
+  top:0;
     width: 100%;
 }
 header a{
@@ -205,33 +153,71 @@ header a{
 header ul{ 
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+    vertical-align: flex;
+  margin:0;
+  padding:0;
+     
+}
+.col3{
+    margin:10px;
+    text-align: left;
+    background-color:white;
+    padding: 0.15px 16px;
+    border-radius: 10px;
 }
 
-span{
-    padding-left: 20px;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    
 }
+.aikolsphoto , .rachelsphoto {
+    border-radius: 50%;
+    margin-right: 16px;
+    float: left;
+}
+.center-column{
+    margin:16px;
+    text-align: left;
+    background-color:white;
+    padding: 0.15px 16px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 5px 5px rgba(135,171,224,0.37);
+}
+h4{
+  margin: 10px 0px;
+  font-weight:normal;
 
-.nav-right{
-    background-color: #2b617e;
-
 }
-.nav-right:hover{
-    background-color: lightgray;
+.time{
+    opacity: 0.50;
+    float: right;
+    
 }
-.nav-left ul i:hover{
-    background-color: white;
-    color: black;
-}
-footer{
+.button { 
+    margin: 0 0 15px;
+    border: none;
+    padding: 7px 15px;
     background-color:#199de5;
+    font-size: 20px;
+    size: 15px;
     color: white;
 }
+
+a :hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.line{
+    opacity: 0.50;
+}
+#bootcampvenue{
+    color: black;
+}
+
 i{
     padding: 20px;
 }
->>>>>>> cd4fefa294ad39c2ccf53fc4a0f6a7418903c6e4
+
