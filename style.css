@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
+=======
+
+.columncenter{
+    font-size: 20px;
+}
+
+body {
+   margin: 0;
+    padding: 0;
+>>>>>>> e896daba1a7f2266a64ba19b188da03113b412ea
   font-family: 'Open Sans', sans-serif;
   background-color: #f5f7f8;
   line-height: 1.5;
@@ -168,23 +179,8 @@ figure {
 .bug {
   height: 120px;
 }
-/* orta kisim deneme */
-.container-post {
-  padding: 20px 30px 10px 20px;
-  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
-  background-color: white;
-  display: block;
-  min-height: 60px;
-}
-.container-post button {
-  margin-top: 10px;
-  padding: 10px;
-  color: white;
-  background-color: #199de5;
-  border: transparent;
-  min-width: 15%;
-}
 
+<<<<<<< HEAD
 .post textarea {
   padding-left: 10px;
   border: 1px solid #ccc;
@@ -224,3 +220,92 @@ figure {
   max-width: 95%;
   min-height: 180px;
 }
+=======
+
+
+header{
+    background-color:#199de5;
+    color: white;
+    display: flex;
+    height: 50px;
+
+
+    position: sticky;
+  top:0;
+    width: 100%;
+}
+header a{
+    color: white;
+}
+header ul{ 
+    display: flex;
+    justify-content: center;
+    vertical-align: flex;
+  margin:0;
+  padding:0;
+     
+}
+.col3{
+    margin:10px;
+    text-align: left;
+    background-color:white;
+    padding: 0.15px 16px;
+    border-radius: 10px;
+}
+
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    
+}
+.aikolsphoto , .rachelsphoto {
+    border-radius: 50%;
+    margin-right: 16px;
+    float: left;
+}
+.center-column{
+    margin:16px;
+    text-align: left;
+    background-color:white;
+    padding: 0.15px 16px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 5px 5px rgba(135,171,224,0.37);
+}
+h4{
+  margin: 10px 0px;
+  font-weight:normal;
+
+}
+.time{
+    opacity: 0.50;
+    float: right;
+    
+}
+.button { 
+    margin: 0 0 15px;
+    border: none;
+    padding: 7px 15px;
+    background-color:#199de5;
+    font-size: 20px;
+    size: 15px;
+    color: white;
+}
+
+a :hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.line{
+    opacity: 0.50;
+}
+#bootcampvenue{
+    color: black;
+}
+
+i{
+    padding: 20px;
+}
+
+>>>>>>> e896daba1a7f2266a64ba19b188da03113b412ea
