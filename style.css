@@ -1,3 +1,7 @@
+/* clear float */
+.clr{
+  clear: both;
+}
 
 .columncenter{
     font-size: 20px;
@@ -18,6 +22,7 @@ body {
   width: 80%;
   margin: 40px auto;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 /* (column-1 , row-1) my profile section */
@@ -217,7 +222,82 @@ a :hover{
     color: black;
 }
 
-i{
+.check i{
     padding: 20px;
 }
 
+/* flex used for columns */
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+/* LEFT-COLUMN STARTS */
+.team-event-photos, .interests, .hey{
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 5px 0px rgb(224, 222, 222);
+  border-radius: 5px;
+}
+
+.btn{
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  color: white;
+  background-color:#199de5;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+#btn-border{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.btn:hover{
+  background-color: lightgray;
+  color: black;
+}
+.icon{
+  display: inline-block;
+  margin-right: 10px!important;
+  color: white;
+}
+.margin-left{
+  display: inline-block;
+  width: auto;
+  margin-left: 15px;
+}
+.description{
+  padding: 15px  ;
+}
+.photo-display{
+  padding: 5px;
+}
+.photo-display .photo{
+  width: 40%;
+  display: inline-block;
+  margin: 7px; 
+}
+.photo-display .photo img{
+  width: 100%;
+}
+.interests, .hey{
+  padding: 5px 15px;
+}
+.hey{
+  background-color: #dfe5e8 ;
+  border: 1px solid #ccc;
+  position: relative;
+}
+#icon-top{
+  position: absolute;
+  background-color: #869ead;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  right: 0px;
+  top: 0px;
+}
+/* LEFT-COLUMN ENDS */
