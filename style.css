@@ -3,10 +3,6 @@
   clear: both;
 }
 
-.columncenter {
-  font-size: 20px;
-}
-
 /* global style */
 body {
   margin: 0;
@@ -16,6 +12,7 @@ body {
   line-height: 1.5;
   font-size: 15px;
 }
+
 .container-profile,
 .container-events,
 .container-request,
@@ -25,6 +22,7 @@ body {
 .team-event-photos,
 .interests,
 .hey {
+  border: 1px solid white;
   box-shadow: 0px 2px 5px 4px rgb(224, 222, 222);
 }
 
@@ -38,11 +36,28 @@ a :hover,
   color: black;
 }
 
-/* ==header== */
-header {
+header,
+.button,
+.btn {
   background-color: #199de5;
   color: white;
+}
+
+header,
+header ul,
+.check,
+.ads,
+.bug,
+.column {
   display: flex;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgb(194, 193, 193);
+}
+/* ==header== */
+header {
   height: 50px;
   position: sticky;
   top: 0;
@@ -50,19 +65,19 @@ header {
 }
 
 header a {
+  text-decoration: none;
   color: white;
 }
+
 header ul {
-  display: flex;
   justify-content: center;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-span {
-  padding-left: 20px;
+.nav-right span {
+  padding-right: 20px;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .nav-right {
   background-color: #2b617e;
@@ -77,19 +92,21 @@ header i {
 }
 .grid {
   display: grid;
-  grid-template-columns: 30% 50% 15%;
-  grid-gap: 2%;
-  width: 80%;
+  grid-template-columns: 25% 55% 18%;
+  grid-gap: 20px;
+  max-width: 1400px;
   margin: auto;
   overflow: hidden;
   margin-top: 20px;
+  padding: 0 20px;
 }
 /* (column-1 , row-1) my profile section */
+
 .container-profile {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  height: 310px;
+  min-height: 310px;
   width: 100%;
   text-align: center;
   background-color: white;
@@ -99,7 +116,7 @@ header i {
   margin: 10px;
   border-radius: 50%;
   width: 110px;
-  height: 110px;
+  min-height: 110px;
 }
 .container-profile h4 {
   font-size: 20px;
@@ -107,6 +124,8 @@ header i {
 }
 .container-profile p {
   text-align: left;
+  padding: 5px;
+  margin-top: 8px;
 }
 .container-profile p i {
   color: #607d8b;
@@ -115,20 +134,22 @@ header i {
 }
 .container-profile hr {
   width: 90%;
-  border: 1px solid #eee;
 }
 
 /* upcoming events section */
 
 .container-events {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
   text-align: center;
-  max-height: 50%;
+  min-height: 400px;
   width: 100%;
 
   border-radius: 5px;
+}
+.container-events p {
+  margin: 15px;
 }
 
 .container-events img {
@@ -147,44 +168,43 @@ header i {
 .container-request {
   box-sizing: border-box;
   width: 100%;
-  margin: auto;
   padding: 15px;
   background-color: white;
   text-align: center;
-  height: 15%;
-
+  min-height: 260px;
   border-radius: 5px;
 }
+.container-request p {
+  margin-bottom: 15px;
+}
 figure {
-  margin: 0;
-  padding: 0;
+  width: 50%;
+  margin: 10px auto;
   line-height: 1;
 }
 .container-request figure img {
   width: 100%;
-  min-height: 110px;
+  min-height: 120px;
 }
 .check button {
   border: transparent;
-  min-height: 30px;
+  min-height: 25px;
   color: white;
-  width: 100%;
+  width: 48%;
 }
 .check {
-  margin: 10px 0;
-  display: flex;
+  width: 100%;
 }
 
 .check-1 {
-  background-color: rgb(76, 175, 80, 0.5);
+  background-color: rgb(76, 175, 80, 0.7);
 }
 .check-2 {
-  background-color: rgb(255, 99, 71, 0.5);
+  background-color: rgb(255, 99, 71, 0.7);
 }
 .ads,
 .bug {
   background-color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 85px;
@@ -207,6 +227,7 @@ figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2px;
+  margin-top: 15px;
 }
 .aikolsphoto,
 .rachelsphoto {
@@ -219,27 +240,25 @@ figure {
   background-color: white;
   padding: 0.15px 16px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 h4 {
   margin: 10px 0px;
   font-weight: normal;
 }
 .time {
-  opacity: 0.5;
   float: right;
+  color: #8c9498;
 }
 .button {
   margin: 0 0 15px;
   border: none;
-  padding: 7px 15px;
-  background-color: #199de5;
-  font-size: 20px;
+  padding: 10px 15px;
   size: 15px;
   color: white;
 }
-
-.line {
-  opacity: 0.5;
+.center-column p {
+  margin: 15px 0;
 }
 #bootcampvenue {
   color: black;
@@ -256,12 +275,11 @@ h4 {
 }
 
 .check i {
-  padding: 20px;
+  padding: 15px;
 }
 
 /* flex used for columns */
 .column {
-  display: flex;
   flex-direction: column;
 }
 
@@ -271,7 +289,6 @@ h4 {
 .hey {
   margin-top: 20px;
   background-color: white;
-
   border-radius: 5px;
 }
 
@@ -298,6 +315,7 @@ h4 {
   display: inline-block;
   width: auto;
   margin-left: 15px;
+  font-size: 20px;
 }
 .description {
   padding: 15px;
@@ -317,6 +335,10 @@ h4 {
 .hey {
   padding: 5px 15px;
 }
+.interests p,
+.hey p {
+  margin: 15px 0;
+}
 .hey {
   background-color: #dfe5e8;
   border: 1px solid #ccc;
@@ -333,28 +355,72 @@ h4 {
 }
 /* LEFT-COLUMN ENDS */
 
-footer{
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+/* footer */
+footer {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
 }
-.footer{
-background-color: #199de5;
-padding: 30px 20px;
+.footer {
+  background-color: #199de5;
+  padding: 30px 20px;
 }
-.team{
-    background-color: #2b617e;
-    font-size: 15px;
-    padding: 20px;
+.team {
+  background-color: #2b617e;
+  font-size: 15px;
+  padding: 20px;
 }
-.team a{
-    color: white;
+.team a {
+  color: white;
 }
-h5{
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-weight: 400;
+h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
 }
-p{
-    margin: 0;
+p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .grid {
+    display: block;
+    margin: 20px;
+  }
+  .check {
+    display: block;
+  }
+  .check button {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .interests,
+  .hey,
+  .nav-left {
+    display: none;
+  }
+  .center-column {
+    margin-top: 20px;
+  }
+
+  .photo-display .photo {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+  }
+  .pictures {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .container-events {
+    margin-top: 20px;
+  }
+  .container-events img {
+    width: 100%;
+  }
+  figure {
+    width: 65%;
+  }
 }
